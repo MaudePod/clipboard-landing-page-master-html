@@ -1,0 +1,39 @@
+section[class="one"] {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+section[class="one"] h1 {
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark-grayish-blue);
+}
+
+section[class="one"] h2 {
+    font-weight: 600;
+    margin: 0;
+    color: var(--dark-grayish-blue);
+}
+
+section[class="one"] p {
+    width: 60%;
+}
+
+section[class="card-one-buttons"] {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+}
+@container (inline-size < 1000px) {
+    section[class="one"] p {
+        width: 80%;
+    }
+
+    section[class="card-one-buttons"] {
+        grid-auto-flow: row;
+        row-gap: 10px;
+    }
+}

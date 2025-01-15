@@ -1,0 +1,30 @@
+section[class="four"]{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    place-self: center;
+    text-align: center;
+    width: 80%;
+}
+section[class="feature"] {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+section[class="feature"] svg{
+    width: 50px;
+    height: 50px;
+}
+
+section[class="feature"] p{
+    width: 70%;
+}
+@container (inline-size < 1000px){
+    section[class="four"]{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    section[class="feature"] p{
+        width: 80%;
+    }
+}

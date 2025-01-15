@@ -1,0 +1,10 @@
+section[class="five"]{
+    display: grid;
+    place-items: center;
+    place-self: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+section[class="five"] p {
+    width: 60%;
+}

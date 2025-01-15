@@ -1,0 +1,34 @@
+section[class="two"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+section[class="two"] section[class="image"] ,
+    section[class="two"] section[class="image"] img{
+    width: 100%;
+    height: 100%;
+}
+
+section[class="features"] {
+    box-sizing: border-box;
+    padding: 10%;
+}
+
+section[class="two"] h3 {
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+
+@container (inline-size < 1000px) {
+    section[class="two"] {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    section[class="two"] section[class="image"] {
+        width: 80%;
+        height: 80%;
+        place-self: center;
+    }
+}

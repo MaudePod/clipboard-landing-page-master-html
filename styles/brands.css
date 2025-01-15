@@ -1,0 +1,12 @@
+section[class="brands"]{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    place-self: center;
+    gap: 50px;
+    margin: 100px 0;
+}
+@container (inline-size < 1000px){
+    section[class="brands"]{
+        grid-template-columns: 1fr;
+    }
+}
